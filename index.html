@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+   <div class="info-container" id="infoContainer">
+       <div class="info">
+          <div class="info-lang">
+              <span class="leng" id="lengEs">Es</span><span>  /  </span><span class="leng" id="lengEn">En</span>
+          </div>
+           <h3 id="tittle1">Informacion</h3>
+           <p id="info1">Esto es un remake del clasico juego "TikTakToe" tambien conocido como "TaTeTi". Desarollado en su totalidad con HTML, CSS y JavaScript nativo, sin frameworks ni librerias.</p>
+           <h3 id="tittle2">Como jugar?</h3>
+           <p id="info2">Debes lograr alinear 3 casillas con el mismo simbolo (X o O) para ganar, puedes cambiar el nombre de los jugadores.</p>
+           <div class="info__okey-btn" id="infoBTN">Entendido</div>
+       </div>
+   </div>
+
+    <div class="game-container">
+
+        <nav class="options-bar">
+            <div class="options__player">
+                <input type="text" value="Player 1" max="15" id="player1Name">
+                <p class="options__score">Score: <span id="player1Score">0</span></p>
+            </div>
+            <div class="options__win options__status-hidden" id="winCard1">
+                <h2>You Win!</h2>
+                <div class="options__reset-BTN">Reiniciar</div>
+            </div>
+        </nav>
+
+        <div class="game">
+            <div class="game__grid-container">
+                <div class="game__space"></div>
+                <div class="game__line"></div>
+                <div class="game__space"></div>
+                <div class="game__line"></div>
+                <div class="game__space"></div>
+
+                <div class="game__line"></div>
+                <div class="game__line"></div>
+                <div class="game__line"></div>
+                <div class="game__line"></div>
+                <div class="game__line"></div>
+
+                <div class="game__space"></div>
+                <div class="game__line"></div>
+                <div class="game__space"></div>
+                <div class="game__line"></div>
+                <div class="game__space"></div>
+
+                <div class="game__line"></div>
+                <div class="game__line"></div>
+                <div class="game__line"></div>
+                <div class="game__line"></div>
+                <div class="game__line"></div>
+
+                <div class="game__space"></div>
+                <div class="game__line"></div>
+                <div class="game__space"></div>
+                <div class="game__line"></div>
+                <div class="game__space"></div>
+
+            </div>
+        </div>
+
+        <nav class="options-bar">
+            <div class="options__player">
+                <input type="text" value="Player 2" max="15"  id="player2Name">
+                <p class="options__score">Score: <span id="player2Score">0</span></p>
+            </div>
+            <div class="options__win options__status-hidden"  id="winCard2">
+                <h2>You Win!</h2>
+                <div class="options__reset-BTN">Reiniciar</div>
+            </div>
+        </nav>
+
+    </div>
+
+    <p class="copy">General Public License 2021 Matias Netto</p>
+
+    <script src="js/script.js"></script>
+    <script src="js/lenguage.js"></script>
+</body>
+</html>
